@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bx03n0cta7hwt"]
+
+[ext_resource type="Script" uid="uid://dvoo43cpflwr7" path="res://main_scene.gd" id="1_tphip"]
+[ext_resource type="PackedScene" uid="uid://b5655r4gpcoj1" path="res://Ship.tscn" id="2_7qccc"]
+[ext_resource type="Script" uid="uid://cca2qgiprep6h" path="res://hard_asteroid.gd" id="4_ec7p0"]
+[ext_resource type="PackedScene" uid="uid://cq8i3i0shgvjj" path="res://Asteroid.tscn" id="4_yui23"]
+[ext_resource type="Script" uid="uid://c3ldpypptwr6l" path="res://UpdateUI.gd" id="5_yui23"]
+
+[node name="Main" type="Node2D" unique_id=1761369529]
+script = ExtResource("1_tphip")
+
+[node name="Nave" parent="." unique_id=1707135784 instance=ExtResource("2_7qccc")]
+position = Vector2(547, 298)
+collision_mask = 253
+
+[node name="Asteroid" parent="." unique_id=1443438254 instance=ExtResource("4_yui23")]
+position = Vector2(1047, -168)
+mass = 1000.0
+
+[node name="Asteroid2" parent="." unique_id=582548673 instance=ExtResource("4_yui23")]
+position = Vector2(285, -72)
+mass = 1000.0
+
+[node name="Asteroid3" parent="." unique_id=1507153879 instance=ExtResource("4_yui23")]
+position = Vector2(629, -398)
+mass = 1000.0
+
+[node name="Asteroid4" parent="." unique_id=903101763 instance=ExtResource("4_yui23")]
+position = Vector2(188, -415)
+mass = 1000.0
+script = ExtResource("4_ec7p0")
+
+[node name="UI" type="Node" parent="." unique_id=1655044969 node_paths=PackedStringArray("ScoreDisplay", "HPDisplay", "VictoryDisplay", "DefeatDisplay")]
+script = ExtResource("5_yui23")
+ScoreDisplay = NodePath("Score Display")
+HPDisplay = NodePath("HP Display")
+VictoryDisplay = NodePath("Victory Display")
+DefeatDisplay = NodePath("Defeat Display")
+
+[node name="Score Display" type="TextEdit" parent="UI" unique_id=2034613106]
+offset_right = 124.0
+offset_bottom = 32.0
+text = "Score:"
+
+[node name="HP Display" type="TextEdit" parent="UI" unique_id=2084832275]
+anchors_preset = -1
+anchor_top = 0.048
+anchor_right = 0.067
+anchor_bottom = 0.10300001
+offset_top = -0.10400009
+offset_right = -0.18400574
+offset_bottom = 0.2559967
+text = "Hp:"
+
+[node name="Defeat Display" type="TextEdit" parent="UI" unique_id=358715215]
+visible = false
+anchors_preset = -1
+anchor_top = 0.048
+anchor_right = 0.067
+anchor_bottom = 0.10300001
+offset_left = 507.0
+offset_top = 245.896
+offset_right = 506.81598
+offset_bottom = 246.256
+text = "Defeat"
+editable = false
+
+[node name="Victory Display" type="TextEdit" parent="UI" unique_id=1404396819]
+visible = false
+anchors_preset = -1
+anchor_top = 0.048
+anchor_right = 0.067
+anchor_bottom = 0.10300001
+offset_left = 508.0
+offset_top = 245.896
+offset_right = 507.81598
+offset_bottom = 246.256
+text = "Victory"
+editable = false
