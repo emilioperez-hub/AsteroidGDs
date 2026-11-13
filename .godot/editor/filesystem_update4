@@ -1,0 +1,11 @@
+res://Bullet.tscn
+res://A_Bullet.gd
+res://Ship.gd
+res://bullet.gd
+res://timer.gd
+res://Main scene.tscn
+res://UpdateUI.gd
+res://Piercing Bullet.tscn
+res://piercing_bullet.gd
+res://Ship.tscn
+res://Asteroid.tscn

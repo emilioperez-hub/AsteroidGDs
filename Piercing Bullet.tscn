@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0kpxk22utkf0"]
+
+[ext_resource type="Script" uid="uid://b3pdgejyqyvik" path="res://piercing_bullet.gd" id="1_cm58g"]
+[ext_resource type="Texture2D" uid="uid://dqvvj7sie6oxg" path="res://icon.svg" id="1_hxft5"]
+
+[node name="PiercingBullet" type="Node2D"]
+script = ExtResource("1_cm58g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.8146973e-06, 0)
+scale = Vector2(0.1640625, 0.4609375)
+texture = ExtResource("1_hxft5")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(0, 10)
+scale = Vector2(1.5909091, 5.8125)
+polygon = PackedVector2Array(-5.657143, -6.709678, 5.657143, -6.709678, 5.528573, 3.2150536, -5.785713, 3.2150536)

@@ -1,4 +1,6 @@
+CollisionPolygon2D
+Area2D
+Sprite2D
 Node
 Window
 AudioStreamPlayer2D
-CollisionPolygon2D

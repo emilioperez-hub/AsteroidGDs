@@ -1,23 +1,25 @@
 class_name Ship extends RigidBody2D
 
 @export_range(1, 5) var hitPoints = 3
-#los layers son los que mencionan a un objeto en especifico como funcionar, es decir que el 1 es la nave, el 2 es la bala y el 3 el asteroide
-#las mascaras son con quienes quieres interactuar, la nave quiere con el asteroide así que solo 3, pero el asteroide con la bala y la nave asi que es 1 y 2
+
 @export_range(200,800, 5) var speed : float = 600
 
 @export_category("Shooting")
-@export var bullet: PackedScene #export es como el serializefield
-@export var pivot: Node2D
+@export var bullet: PackedScene
+
+@onready var sprite_visual: Sprite2D = $Sprite2D
+@onready var pivot: Node2D = $Sprite2D
 
 var initPos = Vector2.ZERO
 var iFrames = 0
-# start
+var scene : Node2D
+
 func _ready() -> void:
 	initPos = global_position
+	scene = get_parent()
 	pass 
 
-#Update
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if global_position.x >= 1152 - 28:
 		global_position.x = 0 + 30
 	if global_position.x <= 0 + 28:
@@ -26,9 +28,6 @@ func _process(delta: float) -> void:
 		global_position.y = 0 + 30
 	if global_position.y <= 0 + 28:
 		global_position.y = 648 - 30
-	pass
-	#fixed update
-func _physics_process(delta: float) -> void:
 	
 	if iFrames > 0:
 		contact_monitor = false
@@ -44,21 +43,29 @@ func _physics_process(delta: float) -> void:
 	pass
 
 func _take_dmg() -> void:
-	hitPoints-=1
-	iFrames = 10
-	GameManager.HP -= 1
+	if iFrames > 0: return
+	despawn()
 	if hitPoints == 0:
 		print_debug("Ship Destroyed")
 		queue_free()
-		
-	teleport(initPos)
+	
 	pass
 	
+func despawn() -> void:
+	get_parent().remove_child(self)
+	pass
+
+func respawn() -> void:
+	hitPoints-=1
+	teleport(initPos)
+	linear_velocity = Vector2.ZERO
+	iFrames = 10
+	pass
+
 func _shoot() -> void:
-	var bulletobjt = (bullet.instantiate()) #as Bullet??????????
+	var bulletobjt = (bullet.instantiate())
 	get_parent().add_child(bulletobjt)
 	bulletobjt.global_position = pivot.global_position
-#aqui se le indica a la bala para donde ir
 	bulletobjt.linear_velocity = Vector2.UP * 1000
 	pass
 

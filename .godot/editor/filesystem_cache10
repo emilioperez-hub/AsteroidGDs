@@ -1,14 +1,14 @@
-78098b89c88a74ebe8c20117b8754620
-::res://::1794069316
-asteroid.gd::GDScript::2454617643516692270::1794068105::0::1::::NormalAsteroid<>A_Asteroid<><>0<>0<><>::
-Asteroid.tscn::PackedScene::5964523529284525615::1794068386::0::1::::<><><>0<>0<><>::uid://ba8bguht4tnk5::::res://asteroid.gd<>uid://dqvvj7sie6oxg::::res://icon.svg
-A_Asteroid.gd::GDScript::8859814765828929524::1794068105::0::1::::A_Asteroid<>RigidBody2D<><>1<>0<><>::
-bullet.gd::GDScript::8735766785348874483::1794068105::0::1::::Bullet<>RigidBody2D<><>0<>0<><>::
-Bullet.tscn::PackedScene::7702076701089826955::1794068506::0::1::::<><><>0<>0<><>::uid://dwpw2j4c86adf::::res://bullet.gd<>uid://dqvvj7sie6oxg::::res://icon.svg
-hard_asteroid.gd::GDScript::4914887314372400625::1794068105::0::1::::<>A_Asteroid<><>0<>0<><>::
-icon.svg::CompressedTexture2D::8326928320040064644::1794068105::1794068165::1::::<><><>0<>0<>7cc2a911cc350909876a37b9fa2a760a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-Main scene.tscn::PackedScene::4054098139375467003::1794069326::0::1::::<><><>0<>0<><>::uid://dvoo43cpflwr7::::res://main_scene.gd<>uid://b5655r4gpcoj1::::res://Nave.tscn<>uid://cca2qgiprep6h::::res://hard_asteroid.gd<>uid://cq8i3i0shgvjj::::res://Asteroid.tscn<>uid://c3ldpypptwr6l::::res://UpdateUI.gd
-main_scene.gd::GDScript::8663032356388876866::1794068105::0::1::::GameManager<>Node2D<><>0<>0<><>::
-Ship.tscn::PackedScene::4557957724799099652::1794069316::0::1::::<><><>0<>0<><>::uid://dqvvj7sie6oxg::::res://icon.svg<>uid://ctnh1ss40felv::::res://Ship.gd<>uid://dhy7cwe50334r::::res://Bullet.tscn
-Ship.gd::GDScript::6133738731480506355::1794069278::0::1::::Ship<>RigidBody2D<><>0<>0<><>::
-UpdateUI.gd::GDScript::6761047366872916077::1794068105::0::1::::<>Node<><>0<>0<><>::
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1794601125
+asteroid.gd::GDScript::2454617643516692270::1794601088::0::1::::NormalAsteroid<>A_Asteroid<><>0<>0<><>::
+Asteroid.tscn::PackedScene::5964523529284525615::1794601088::0::1::::<><><>0<>0<><>::uid://ba8bguht4tnk5::::res://asteroid.gd<>uid://dqvvj7sie6oxg::::res://icon.svg
+A_Asteroid.gd::GDScript::8859814765828929524::1794601088::0::1::::A_Asteroid<>RigidBody2D<><>1<>0<><>::
+bullet.gd::GDScript::8735766785348874483::1794601088::0::1::::Bullet<>RigidBody2D<><>0<>0<><>::
+Bullet.tscn::PackedScene::7702076701089826955::1794601088::0::1::::<><><>0<>0<><>::uid://dwpw2j4c86adf::::res://bullet.gd<>uid://dqvvj7sie6oxg::::res://icon.svg
+hard_asteroid.gd::GDScript::4914887314372400625::1794601088::0::1::::<>A_Asteroid<><>0<>0<><>::
+icon.svg::CompressedTexture2D::8326928320040064644::1794601088::1794601125::1::::<><><>0<>0<>7cc2a911cc350909876a37b9fa2a760a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Main scene.tscn::PackedScene::4054098139375467003::1794601088::0::1::::<><><>0<>0<><>::uid://dvoo43cpflwr7::::res://main_scene.gd<>uid://b5655r4gpcoj1::::res://Ship.tscn<>uid://cca2qgiprep6h::::res://hard_asteroid.gd<>uid://cq8i3i0shgvjj::::res://Asteroid.tscn<>uid://c3ldpypptwr6l::::res://UpdateUI.gd
+main_scene.gd::GDScript::8663032356388876866::1794601088::0::1::::GameManager<>Node2D<><>0<>0<><>::
+Ship.gd::GDScript::6133738731480506355::1794601088::0::1::::Ship<>RigidBody2D<><>0<>0<><>::
+Ship.tscn::PackedScene::4557957724799099652::1794601088::0::1::::<><><>0<>0<><>::uid://dqvvj7sie6oxg::::res://icon.svg<>uid://ctnh1ss40felv::::res://Ship.gd<>uid://dhy7cwe50334r::::res://Bullet.tscn
+UpdateUI.gd::GDScript::6761047366872916077::1794601088::0::1::::<>Node<><>0<>0<><>::

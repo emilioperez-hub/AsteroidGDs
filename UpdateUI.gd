@@ -11,7 +11,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	ScoreDisplay.text = "Score: "+ str(GameManager.score)
 	HPDisplay.text = "Lifes: "+ str(GameManager.HP)
-	if GameManager.score >= 10:
+	if GameManager.score >= 1200:
 		VictoryDisplay.visible = true
 	if GameManager.HP <= 0:
 		DefeatDisplay.visible = true
