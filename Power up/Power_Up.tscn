@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c2jq0cs8pe5yh"]
+
+[ext_resource type="Script" uid="uid://ckwjgdjma8vje" path="res://Power up/piercingBulletPU.gd" id="1_bg7c5"]
+[ext_resource type="Texture2D" uid="uid://dqvvj7sie6oxg" path="res://icon.svg" id="1_bp7b8"]
+
+[node name="PowerUp" type="RigidBody2D" unique_id=1210836735]
+scale = Vector2(0.48799512, 0.4604125)
+gravity_scale = 0.0
+script = ExtResource("1_bg7c5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=204944368]
+position = Vector2(-14.234376, 9.230767)
+scale = Vector2(5.0781245, 6.1538463)
+polygon = PackedVector2Array(-9.012308, -10.112499, -7.24, -11.412498, 13.043078, -11.412498, 14.6184635, -10.275, 14.6184635, 6.9500003, 13.240002, 8.4125, -7.24, 8.4125, -9.012308, 6.7875)
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=331909262]
+texture = ExtResource("1_bp7b8")

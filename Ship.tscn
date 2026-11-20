@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5655r4gpcoj1"]
+[gd_scene format=3 uid="uid://b5655r4gpcoj1"]
 
 [ext_resource type="Texture2D" uid="uid://dqvvj7sie6oxg" path="res://icon.svg" id="1_l7t7u"]
 [ext_resource type="Script" uid="uid://ctnh1ss40felv" path="res://Ship.gd" id="1_ta373"]
 [ext_resource type="PackedScene" uid="uid://c0kpxk22utkf0" path="res://Piercing Bullet.tscn" id="2_oam5h"]
 
-[node name="Nave" type="RigidBody2D"]
+[node name="Nave" type="RigidBody2D" unique_id=1497988948]
 collision_mask = 4
 gravity_scale = 0.0
 lock_rotation = true
@@ -13,14 +13,14 @@ max_contacts_reported = 1
 script = ExtResource("1_ta373")
 bullet = ExtResource("2_oam5h")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=578623358]
 position = Vector2(22.408304, -6.447915)
 scale = Vector2(4.4764547, 4.9479165)
 polygon = PackedVector2Array(1.025744, 7.5684214, -11.260764, 7.5684214, -11.930937, 6.962105, -11.930937, -4.35579, -11, -5, 1, -5, 1.9193082, -4.1536846, 1.9193082, 6.76)
 
-[node name="Pivot" type="Node2D" parent="."]
+[node name="Pivot" type="Node2D" parent="." unique_id=1406190589]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=327094714]
 position = Vector2(0, 1.1920929e-07)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_l7t7u")

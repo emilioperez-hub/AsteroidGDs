@@ -73,6 +73,5 @@ func teleport(pos:Vector2) -> void:
 	PhysicsServer2D.body_set_state(
 		get_rid(),
 		PhysicsServer2D.BODY_STATE_TRANSFORM,
-		Transform2D.IDENTITY.translated(pos)
-	)
+		Transform2D.IDENTITY.translated(pos))
 	pass
