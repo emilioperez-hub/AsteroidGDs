@@ -10,10 +10,6 @@
 [node name="Main" type="Node2D" unique_id=1755241548]
 script = ExtResource("1_tphip")
 
-[node name="Nave" parent="." unique_id=1309231523 instance=ExtResource("2_7qccc")]
-position = Vector2(547, 298)
-collision_mask = 253
-
 [node name="Asteroid" parent="." unique_id=622372300 instance=ExtResource("4_yui23")]
 position = Vector2(1040, 364)
 mass = 1000.0
@@ -85,3 +81,6 @@ editable = false
 
 [node name="PowerUp" parent="." unique_id=1210836735 instance=ExtResource("6_ec7p0")]
 position = Vector2(640, 466)
+
+[node name="Nave" parent="." unique_id=1497988948 instance=ExtResource("2_7qccc")]
+position = Vector2(551, 323)

@@ -63,10 +63,11 @@ func respawn() -> void:
 	pass
 
 func _shoot() -> void:
-	var bulletobjt = (bullet.instantiate())
+	var bulletobjt = (bullet.instantiate() as ABullet)
 	get_parent().add_child(bulletobjt)
 	bulletobjt.global_position = pivot.global_position
-	bulletobjt.linear_velocity = Vector2.UP * 1000
+	bulletobjt.global_rotation = pivot.global_rotation
+	bulletobjt.shoot(Vector2.UP.rotated(global_rotation))
 	pass
 
 func teleport(pos:Vector2) -> void:

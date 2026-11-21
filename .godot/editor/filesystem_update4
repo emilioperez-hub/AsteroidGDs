@@ -1,11 +1,11 @@
-res://piercing_bullet.gd
-res://Piercing Bullet.tscn
 res://Power up/Power_Up.tscn
-res://Power up/Power_Up.gd
-res://Ship.gd
-res://Main scene.tscn
-res://Power up/piercingBulletPU.gd
-res://GameManager.gd
 res://Asteroid.tscn
-res://Ship.tscn
 res://Bullet.tscn
+res://A_Asteroid.gd
+res://A_Bullet.gd
+res://bullet.gd
+res://Ship.gd
+res://Ship.tscn
+res://Main scene.tscn
+res://Piercing Bullet.tscn
+res://piercing_bullet.gd

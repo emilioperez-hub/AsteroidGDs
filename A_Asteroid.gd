@@ -1,6 +1,5 @@
 @abstract class_name A_Asteroid extends RigidBody2D
 
-var onDmgTkn: Signal
 @export_range (0 ,500) var reward : int = 10
 var on_dmg_tkn_signal :Signal
 

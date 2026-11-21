@@ -13,14 +13,15 @@ max_contacts_reported = 1
 script = ExtResource("1_ta373")
 bullet = ExtResource("2_oam5h")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=578623358]
-position = Vector2(22.408304, -6.447915)
-scale = Vector2(4.4764547, 4.9479165)
-polygon = PackedVector2Array(1.025744, 7.5684214, -11.260764, 7.5684214, -11.930937, 6.962105, -11.930937, -4.35579, -11, -5, 1, -5, 1.9193082, -4.1536846, 1.9193082, 6.76)
-
 [node name="Pivot" type="Node2D" parent="." unique_id=1406190589]
+position = Vector2(0, -44)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=327094714]
 position = Vector2(0, 1.1920929e-07)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_l7t7u")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=578623358]
+position = Vector2(22.408304, -6.447915)
+scale = Vector2(4.4764547, 4.9479165)
+polygon = PackedVector2Array(1.025744, 7.5684214, -11.260764, 7.5684214, -11.930937, 6.962105, -11.930937, -4.35579, -11, -5, 1, -5, 1.9193082, -4.1536846, 1.9193082, 6.76)

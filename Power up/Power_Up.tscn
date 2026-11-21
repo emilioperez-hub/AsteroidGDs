@@ -5,13 +5,16 @@
 
 [node name="PowerUp" type="RigidBody2D" unique_id=1210836735]
 scale = Vector2(0.48799512, 0.4604125)
+mass = 0.001
 gravity_scale = 0.0
 script = ExtResource("1_bg7c5")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=204944368]
-position = Vector2(-14.234376, 9.230767)
-scale = Vector2(5.0781245, 6.1538463)
-polygon = PackedVector2Array(-9.012308, -10.112499, -7.24, -11.412498, 13.043078, -11.412498, 14.6184635, -10.275, 14.6184635, 6.9500003, 13.240002, 8.4125, -7.24, 8.4125, -9.012308, 6.7875)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1316920533]
+position = Vector2(-2.0492008, -2.6774475e-07)
+scale = Vector2(1.8363795, 1.8363798)
+polygon = PackedVector2Array(13.390701, -9.461945, 12.27481, -11.827431, -10.043027, -11.827431, -11.382096, -9.698493, -11.158918, 10.644688, -8.9271345, 13.010174, 11.158917, 13.010174, 13.390701, 10.644688)
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=331909262]
+position = Vector2(0, -3.8146973e-06)
+scale = Vector2(0.37192494, 0.37192494)
 texture = ExtResource("1_bp7b8")
